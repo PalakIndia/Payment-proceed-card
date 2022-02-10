@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(170, 206, 226);
+}
+
+.wrapper{
+    justify-content: center;
+    display: grid;
+}
+
+.container{
+    width: 50%;
+    margin: 5rem auto;
+    height: 70vh;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: -1px 2px  20px rgb(29, 60, 82);
+}
+
+h2{
+    margin-top: 10px;
+    padding:15px ;
+}
+
+.logo{
+    margin:20px  20px;
+    background-color: rgb(245, 243, 243);
+    border-radius: 10px;
+}
+.logo i{
+    padding: 10px;
+    border-radius: 50px;
+    position: relative;
+    top: 10px;
+    left: -60px;
+    background-color: rgb(214, 211, 211);
+}
+
+h4,a{
+    display: inline;
+}
+
+h4{
+    position: relative;
+    top: 1px;
+    left: -50px;
+    font-size: .9rem;
+}
+
+
+.link1{
+    position: relative;
+    top: -15px;
+    left: 60px;
+    color: rgb(94, 16, 94);
+}
+
+.prize{
+    font-size: .9rem;
+    position: relative;
+    top: -5px;
+    color: rgb(88, 88, 88);
+    left: -5px;
+}
+
+button{
+    padding: 12px;
+    border-radius: 10px;
+    width: 70%;
+    border: none;
+    background-color: rgb(84, 27, 92);
+    color: white;
+    font-weight: 700;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgb(51, 3, 63);
+}
+
+.list2 {
+    position: relative;
+    top: 40px;
+    text-decoration: none;
+    font-size: .9rem;
+    color: rgb(83, 7, 90);
+}
+.list2:hover{
+    text-decoration: underline;
+}
+
+p{
+    font-size: .9rem;
+}
+
+.img-container{
+    display: grid;
+    justify-content:center;
+    top: 10px;
+    position: relative;
+}
+img{
+    height: 120px;
+    animation: float 6s  ease-in-out infinite;
+}
+
+@keyframes float{
+   
+    0%{
+        transform: translatey(0px);
+    }
+
+    50%{
+        transform: translatey(-10px);
+    }
+
+    100%{
+        transform: translatey(0px);
+    }
+
+}
+
+
+@media screen and (max-width:769px){
+    .container{
+        height: 80vh;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width:619px){
+
+    .container{
+        width: 70%;
+    }
+    h2{
+        font-size: 1.4rem;
+    }
+
+    p{
+        font-size: .8rem;
+    }
+    .logo{
+        margin:20px  20px;
+        background-color: rgb(245, 243, 243);
+        border-radius: 10px;
+    }
+    .logo i{
+        padding: 8px;
+        border-radius: 50px;
+        position: relative;
+        top: 10px;
+        left: -50px;
+        background-color: rgb(214, 211, 211);
+    }
+
+    h4{
+        font-size: .8rem;
+        position: relative;
+    top: 1px;
+    left: -40px;
+    }
+
+    .prize{
+        position: relative;
+    top: px;
+    left: 5px;
+    }
+
+    .link1{
+        position: relative;
+    top: -10px;
+    left: 30px;
+    color: rgb(94, 16, 94);
+    }
+}
